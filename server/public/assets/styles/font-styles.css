@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Public Sans Extra Light';
+  src: url('../fonts/PublicSans-ExtraLight.woff') format('woff'),
+       url('../fonts/PublicSans-ExtraLight.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Public Sans Bold';
+  src: url('../fonts/PublicSans-ExtraBold.woff') format('woff'),
+       url('../fonts/PublicSans-ExtraBold.woff2') format('woff2');
+}
