@@ -1,21 +1,20 @@
 import React from 'react';
 
+// Main Components
+import Header from '../components/header';
+import SideScroll from '../components/sidescroll';
+import Main from '../components/main';
+import Footer from '../components/footer';
+
 const App = () => {
   return (
     <div className="section-wrapper">
-      <header className="header">
-        <h1>Redstar Component Library</h1>
-      </header>
+      <Header />
       <div className="content-container">
-        <div className="side-scroll">
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-        </div>
-        <div className="main">
-
-        </div>
+        <SideScroll />
+        <Main />
       </div>
+      <Footer />
     </div>
   );
 };
