@@ -22,6 +22,10 @@ p {
   font-weight: normal;
 }
 
+img {
+  width: 100%;
+}
+
 .header {
   padding: 1rem;
   text-align: center;
@@ -31,6 +35,33 @@ p {
 
 .header h1 {
   margin: 0;
+}
+
+@media (min-width: 980px) {
+  .logo-wrapper {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 979px) {
+  .logo-wrapper {
+    max-width: 100%;
+  }
+}
+
+.logo-wrapper--left {
+  margin: auto auto auto 0;
+  max-width: 300px;
+}
+
+.logo-wrapper--right {
+  margin: auto 0 auto auto;
+  max-width: 300px;
+}
+
+.logo-wrapper--center {
+  margin: auto;
+  max-width: 300px;
 }
 
 .content-container {

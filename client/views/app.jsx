@@ -9,7 +9,8 @@ import Footer from '../components/footer';
 const App = () => {
   return (
     <div className="section-wrapper">
-      <Header />
+      <Header
+      />
       <div className="content-container">
         <SideScroll />
         <Main />
