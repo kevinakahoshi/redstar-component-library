@@ -4,7 +4,7 @@ import React, {
 
 const Accordion = ({ buttonText, innerText }) => {
   const [open, setOpen] = useState(false);
-  let display = open ? null : 'd-none';
+  let display = open ? '' : 'd-none';
 
   return (
     <div
@@ -18,10 +18,12 @@ const Accordion = ({ buttonText, innerText }) => {
         </p>
       </div>
       <div
-        className={`inner-text-wrapper ${display}`}>
+        className={`divider ${display}`} />
+      <div
+        className={`inner-text-wrapper ${open ? 'text-wrapper--open' : 'text-wrapper--closed'}`}>
         <p
           className="inner-text m-0">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          { innerText }
         </p>
       </div>
     </div>
