@@ -1,5 +1,6 @@
 @import url('./font-styles.css');
 @import './components/accordion/accordion.css';
+@import './components/toolltip/tooltip.css';
 @import './utilities/utilities.css';
 
 body {
