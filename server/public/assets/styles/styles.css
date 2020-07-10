@@ -29,6 +29,13 @@ img {
   width: 100%;
 }
 
+pre {
+  display: inline-block;
+  background: #f1f1f1;
+  padding: .25rem;
+  margin: 0;
+}
+
 .header {
   padding: 1rem;
   text-align: center;
@@ -69,9 +76,20 @@ img {
 
 .content-container {
   display: grid;
-  grid-template-columns: .2fr .8fr;
   grid-gap: 20px;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr 4fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .side-scroll {
