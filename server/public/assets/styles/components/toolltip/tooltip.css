@@ -28,7 +28,7 @@
   border-color: #ccc;
   position: absolute;
   transform: translateX(50%) rotate(45deg);
-  bottom: -6px;
+  bottom: -5px;
   right: 50%;
 }
 
