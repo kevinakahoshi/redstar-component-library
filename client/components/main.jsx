@@ -9,8 +9,9 @@ const Main = () => {
         buttonText="Hello Please"
         innerText="Hello Hello Hello" />
       <TooltipWrapper
-        message="Here is that new Tooltip Wrapper you were hearing about!">
-        <p>This <pre>p</pre> element is wrapped in the <pre>TooltipWrapper</pre></p>
+        message="Here is that new Tooltip Wrapper you were hearing about!"
+        orientation="left">
+        <p>This element is wrapped in the TooltipWrapper component</p>
       </TooltipWrapper>
     </div>
   );
