@@ -29,7 +29,18 @@
   position: absolute;
   transform: translateX(50%) rotate(45deg);
   bottom: -5px;
-  right: 50%;
+}
+
+.ttw-orientation--center::after {
+  left: 50%;
+}
+
+.ttw-orientation--left::after {
+  left: 1rem;
+}
+
+.ttw-orientation--right::after {
+  right: 1rem;
 }
 
 .ttw-message-wrapper p {
