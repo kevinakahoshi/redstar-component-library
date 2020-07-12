@@ -1,0 +1,17 @@
+.content-container {
+  display: grid;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr 4fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+}

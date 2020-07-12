@@ -1,0 +1,51 @@
+.drawer {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 2;
+  transition: .3s all;
+  padding: 1rem;
+}
+
+.drawer a {
+  display: block;
+  margin: 2rem auto;
+}
+
+.drawer--hide {
+  right: -100%;
+}
+
+.drawer--show {
+  right: 0;
+}
+
+.drawer-overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, .25);
+}
+
+.drawer-wrapper--open {
+  background: #00000090;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+  .drawer a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .drawer a {
+    font-size: 2rem;
+  }
+}

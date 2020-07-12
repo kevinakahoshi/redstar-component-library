@@ -1,0 +1,13 @@
+.hamburger {
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 2rem;
+  height: .25rem;
+  background: #222;
+}
+
+.burger-line.middle {
+  margin: .25rem 0;
+}
