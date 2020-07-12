@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #222;
+  transition: .3s all;
+}
+
+.nav-link:hover {
+  font-weight: bold;
+  color: #999;
+}

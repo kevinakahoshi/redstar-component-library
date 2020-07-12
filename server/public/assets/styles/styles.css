@@ -1,5 +1,12 @@
 @import url('./font-styles.css');
 @import './components/accordion/accordion.css';
+@import './components/header/close-button.css';
+@import './components/content-container/content-container.css';
+@import './components/header/hamburger.css';
+@import './components/header/header.css';
+@import './components/header/logo.css';
+@import './components/header/navigation.css';
+@import './components/header/nav-drawer.css';
 @import './components/toolltip/tooltip.css';
 @import './utilities/utilities.css';
 
@@ -20,7 +27,7 @@ h1 {
   font-size: 3rem;
 }
 
-p {
+p, a {
   font-family: 'Public Sans Extra Light';
   font-weight: normal;
 }
@@ -33,17 +40,6 @@ pre {
   display: inline-block;
   background: #f1f1f1;
   padding: .25rem;
-  margin: 0;
-}
-
-.header {
-  padding: 1rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-}
-
-.header h1 {
   margin: 0;
 }
 
@@ -72,24 +68,6 @@ pre {
 .logo-wrapper--center {
   margin: auto;
   max-width: 300px;
-}
-
-.content-container {
-  display: grid;
-  grid-gap: 20px;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 768px) {
-  .content-container {
-    grid-template-columns: 1fr 4fr;
-  }
-}
-
-@media (max-width: 767px) {
-  .content-container {
-    grid-template-columns: 1fr;
-  }
 }
 
 .side-scroll {
