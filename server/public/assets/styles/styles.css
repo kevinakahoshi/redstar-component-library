@@ -1,6 +1,7 @@
 @import url('./font-styles.css');
 @import './components/accordion/accordion.css';
 @import './components/header/close-button.css';
+@import './components/header/call-to-action.css';
 @import './components/content-container/content-container.css';
 @import './components/header/hamburger.css';
 @import './components/header/header.css';
@@ -9,6 +10,7 @@
 @import './components/header/nav-drawer.css';
 @import './components/toolltip/tooltip.css';
 @import './utilities/utilities.css';
+
 
 body {
   margin: 0;
@@ -27,7 +29,7 @@ h1 {
   font-size: 3rem;
 }
 
-p, a {
+p, a, button {
   font-family: 'Public Sans Extra Light';
   font-weight: normal;
 }
@@ -53,6 +55,13 @@ pre {
   .logo-wrapper {
     max-width: 100%;
   }
+}
+
+.section-wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
 }
 
 .logo-wrapper--left {
@@ -83,6 +92,5 @@ pre {
 .footer {
   padding: 1rem;
   text-align: center;
-  margin-bottom: 1rem;
   border: 1px solid #ccc;
 }

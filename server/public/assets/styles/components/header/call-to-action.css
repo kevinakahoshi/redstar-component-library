@@ -1,0 +1,10 @@
+.call-to-action {
+  padding: 1rem 2rem;
+  width: 100%;
+  background: #2d9486;
+  border-radius: .25rem;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
