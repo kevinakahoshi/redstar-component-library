@@ -3,8 +3,8 @@ import React, {
   useEffect
 } from 'react';
 
-import LinkList from '../header/link-list';
-import NavDrawer from '../header/nav-drawer';
+import LinkList from '../header/LinkList';
+import NavDrawer from '../header/NavDrawer';
 
 const Navigation = ({ linkList }) => {
   const [width, setWidth] = useState(window.innerWidth);

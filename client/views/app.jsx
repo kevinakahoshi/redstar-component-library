@@ -1,10 +1,10 @@
 import React from 'react';
 
 // Main Components
-import Header from '../components/header';
-import SideScroll from '../components/sidescroll';
-import Main from '../components/main';
-import Footer from '../components/footer';
+import Header from '../components/Header';
+import SideScroll from '../components/Sidescroll';
+import Main from '../components/Main';
+import Footer from '../components/Footer';
 
 const App = () => {
   const linkList = [
