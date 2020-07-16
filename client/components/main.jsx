@@ -1,6 +1,6 @@
 import React from 'react';
-import Accordion from '../components/elements/accordion';
-import TooltipWrapper from './elements/tooltip-wrapper';
+import Accordion from '../components/elements/Accordion';
+import TooltipWrapper from './elements/TooltipWrapper';
 
 const Main = () => {
   return (

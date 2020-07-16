@@ -19,7 +19,7 @@
 .close-button::before,
 .close-button::after {
   content: '';
-  width: 1.5rem;
+  width: 1rem;
   height: .125rem;
   background: #ccc;
   display: block;

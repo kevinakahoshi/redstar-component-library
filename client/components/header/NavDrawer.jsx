@@ -2,9 +2,9 @@ import React, {
   useState
 } from 'react';
 
-import CloseButton from '../elements/close-button';
-import Hamburger from '../elements/hamburger';
-import LinkList from '../header/link-list';
+import CloseButton from '../elements/CloseButton';
+import Hamburger from '../elements/Hamburger';
+import LinkList from '../header/LinkList';
 
 const NavDrawer = ({ linkList }) => {
   const [showDrawer, setShowDrawer] = useState(false);
