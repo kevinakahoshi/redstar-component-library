@@ -2,11 +2,12 @@ import React, {
   useState
 } from 'react';
 
+import CallToAction from '../header/CallToAction';
 import CloseButton from '../elements/CloseButton';
 import Hamburger from '../elements/Hamburger';
 import LinkList from '../header/LinkList';
 
-const NavDrawer = ({ linkList }) => {
+const NavDrawer = ({ linkList, callToAction }) => {
   const [showDrawer, setShowDrawer] = useState(false);
 
   return (
@@ -16,14 +17,20 @@ const NavDrawer = ({ linkList }) => {
         setShowDrawer={setShowDrawer} />
       <div
         className={`drawer-wrapper drawer-wrapper--${showDrawer ? 'open' : 'closed'}`}
-        // onClick={() => setShowDrawer(false)}
       >
         <div
           className={`drawer drawer--${showDrawer ? 'show' : 'hide'}`}>
           <CloseButton
             setShowDrawer={setShowDrawer} />
-          <LinkList
-            linkList={linkList} />
+          <div className="link-list-wrapper">
+            <LinkList
+              linkList={linkList} />
+          </div>
+          { callToAction.include
+            ? <CallToAction
+              callToActionText={callToAction.text}
+              type={callToAction.type} />
+            : '' }
         </div>
       </div>
     </div>

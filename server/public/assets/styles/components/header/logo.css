@@ -1,3 +1,11 @@
 .logo {
   border: 2px solid #222;
+  display: flex;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    max-width: 250px;
+  }
 }
