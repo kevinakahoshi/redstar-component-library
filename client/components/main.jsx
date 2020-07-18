@@ -1,18 +1,27 @@
 import React from 'react';
-import Accordion from '../components/elements/Accordion';
-import TooltipWrapper from './elements/TooltipWrapper';
 
-const Main = () => {
+// Views
+import AccordionInfo from '../views/AccordionInfo';
+import IntroInfo from '../views/IntroInfo';
+import TooltipInfo from '../views/TooltipInfo';
+
+const Main = ({ activeComponent }) => {
+  let view = null;
+
+  switch (activeComponent) {
+    case 'Accordion':
+      view = <AccordionInfo />;
+      break;
+    case 'Tooltip':
+      view = <TooltipInfo />;
+      break;
+    default:
+      view = <IntroInfo />;
+  }
+
   return (
     <div className="main">
-      <Accordion
-        buttonText="Hello Please"
-        innerText="Hello Hello Hello" />
-      <TooltipWrapper
-        message="Here is that new Tooltip Wrapper you were hearing about!"
-        orientation="left">
-        <p>This element is wrapped in the TooltipWrapper component</p>
-      </TooltipWrapper>
+      { view }
     </div>
   );
 };
