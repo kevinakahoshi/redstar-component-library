@@ -3,6 +3,7 @@ import React from 'react';
 // Views
 import AccordionInfo from '../views/AccordionInfo';
 import IntroInfo from '../views/IntroInfo';
+import Spinner from '../components/elements/Spinner';
 import TooltipInfo from '../views/TooltipInfo';
 
 const Main = ({ activeComponent }) => {
@@ -22,6 +23,7 @@ const Main = ({ activeComponent }) => {
   return (
     <div className="main">
       { view }
+      <Spinner />
     </div>
   );
 };
