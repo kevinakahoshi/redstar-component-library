@@ -1,13 +1,38 @@
+.tt-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  font-size: .75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #ccc;
+  transition: .3s all;
+}
+
+.tt-icon:hover {
+  color: #000;
+  border-color: #000;
+}
+
 .tooltip-wrapper {
   position: relative;
 }
 
+.tt-message-outer,
 .ttw-message-outer {
   position: absolute;
   z-index: 1;
   transform: translateY(calc(-100% - .5rem));
 }
 
+.tt-message-outer {
+  left: -.5rem;
+}
+
+.tt-message-wrapper,
 .ttw-message-wrapper {
   padding: .5rem;
   border-radius: .25rem;
@@ -17,6 +42,7 @@
   position: relative;
 }
 
+.tt-message-wrapper::after,
 .ttw-message-wrapper::after {
   content: '';
   height: .5rem;
