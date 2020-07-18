@@ -3,7 +3,7 @@ import React from 'react';
 // Views
 import AccordionInfo from '../views/AccordionInfo';
 import IntroInfo from '../views/IntroInfo';
-import Spinner from '../components/elements/Spinner';
+import SpinnerInfo from '../views/SpinnerInfo';
 import TooltipInfo from '../views/TooltipInfo';
 
 const Main = ({ activeComponent }) => {
@@ -12,6 +12,9 @@ const Main = ({ activeComponent }) => {
   switch (activeComponent) {
     case 'Accordion':
       view = <AccordionInfo />;
+      break;
+    case 'Spinner':
+      view = <SpinnerInfo />;
       break;
     case 'Tooltip':
       view = <TooltipInfo />;
@@ -23,7 +26,6 @@ const Main = ({ activeComponent }) => {
   return (
     <div className="main">
       { view }
-      <Spinner />
     </div>
   );
 };
