@@ -6,6 +6,9 @@ import TooltipWrapper from '../components/elements/TooltipWrapper';
 const TooltipInfo = () => {
   return (
     <>
+      <p>
+
+      </p>
       <Tooltip
         message="Here is that new Tooltip Wrapper you were hearing about!" />
       <TooltipWrapper
