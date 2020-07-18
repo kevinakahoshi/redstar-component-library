@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {
+  useState
+} from 'react';
 
 // Main Components
 import Header from '../components/Header';
@@ -7,6 +9,8 @@ import Main from '../components/Main';
 import Footer from '../components/Footer';
 
 const App = () => {
+  const [activeComponent, setActiveComponent] = useState('');
+
   const linkList = [
     {
       href: '#',
@@ -32,8 +36,11 @@ const App = () => {
         linkList={linkList}
       />
       <div className="content-container">
-        <SideScroll />
-        <Main />
+        <SideScroll
+          activeComponent={activeComponent}
+          setActiveComponent={setActiveComponent} />
+        <Main
+          activeComponent={activeComponent} />
       </div>
       <Footer />
     </div>

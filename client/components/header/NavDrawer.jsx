@@ -3,8 +3,8 @@ import React, {
 } from 'react';
 
 import CallToAction from '../header/CallToAction';
-import CloseButton from '../elements/CloseButton';
-import Hamburger from '../elements/Hamburger';
+import CloseButton from '../header/CloseButton';
+import Hamburger from '../header/Hamburger';
 import LinkList from '../header/LinkList';
 
 const NavDrawer = ({ linkList, callToAction }) => {

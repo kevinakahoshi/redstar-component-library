@@ -1,0 +1,15 @@
+import React from 'react';
+
+import TooltipWrapper from '../components/elements/TooltipWrapper';
+
+const TooltipInfo = () => {
+  return (
+    <TooltipWrapper
+      message="Here is that new Tooltip Wrapper you were hearing about!"
+      orientation="left">
+      <p>This element is wrapped in the TooltipWrapper component</p>
+    </TooltipWrapper>
+  );
+};
+
+export default TooltipInfo;

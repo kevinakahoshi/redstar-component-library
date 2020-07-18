@@ -1,10 +1,25 @@
 import React from 'react';
 
-const SideScroll = () => {
+const SideScroll = ({ activeComponent, setActiveComponent }) => {
+  const handleClick = event => {
+    if (event.target.value === activeComponent) return;
+    setActiveComponent(event.target.value);
+  };
+
   return (
     <div className="side-scroll">
-      <p>Accordion</p>
-      <p>Tooltip</p>
+      <button
+        className="button"
+        value="Accordion"
+        onClick={handleClick}>
+        Accordion
+      </button>
+      <button
+        className="button"
+        value="Tooltip"
+        onClick={handleClick}>
+        Tooltip
+      </button>
     </div>
   );
 };

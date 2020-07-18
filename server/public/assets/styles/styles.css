@@ -1,4 +1,5 @@
 @import url('./font-styles.css');
+
 @import './components/accordion/accordion.css';
 @import './components/header/close-button.css';
 @import './components/header/call-to-action.css';
@@ -10,7 +11,6 @@
 @import './components/header/nav-drawer.css';
 @import './components/toolltip/tooltip.css';
 @import './utilities/utilities.css';
-
 
 body {
   margin: 0;
@@ -93,4 +93,24 @@ pre {
   padding: 1rem;
   text-align: center;
   border: 1px solid #ccc;
+}
+
+.button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.side-scroll .button {
+  background: #f2f2f2;
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: .3s all;
+}
+
+.side-scroll .button:hover {
+  background: #e0e0e0;
 }
