@@ -9,6 +9,7 @@
 @import './components/header/logo.css';
 @import './components/header/navigation.css';
 @import './components/header/nav-drawer.css';
+@import './components/spinner/spinner.css';
 @import './components/toolltip/tooltip.css';
 @import './utilities/utilities.css';
 

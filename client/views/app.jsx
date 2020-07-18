@@ -9,7 +9,7 @@ import Main from '../components/Main';
 import Footer from '../components/Footer';
 
 const App = () => {
-  const [activeComponent, setActiveComponent] = useState('Tooltip');
+  const [activeComponent, setActiveComponent] = useState('');
 
   const linkList = [
     {
