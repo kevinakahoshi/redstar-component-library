@@ -22,6 +22,12 @@ const SideScroll = ({ activeComponent, setActiveComponent }) => {
       </button>
       <button
         className="button"
+        value="ProgressBar"
+        onClick={handleClick}>
+        Progress Bar
+      </button>
+      <button
+        className="button"
         value="Spinner"
         onClick={handleClick}>
         Spinner

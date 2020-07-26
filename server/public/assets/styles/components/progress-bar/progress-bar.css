@@ -1,0 +1,14 @@
+.progress-outer {
+  width: 100%;
+  background: #222222;
+}
+
+.progress-inner {
+  height: .5rem;
+  transition: .3s all;
+  background: #cccccc;
+}
+
+.progress-button {
+  margin-top: 1rem;
+}

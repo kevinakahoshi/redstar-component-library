@@ -4,11 +4,12 @@ import React from 'react';
 import AccordionInfo from '../views/AccordionInfo';
 import ButtonSpinnerInfo from '../views/ButtonSpinnerInfo';
 import IntroInfo from '../views/IntroInfo';
+import ProgressBarInfo from '../views/ProgressBarInfo';
 import SpinnerInfo from '../views/SpinnerInfo';
 import TooltipInfo from '../views/TooltipInfo';
 
 const Main = ({ activeComponent }) => {
-  let view = null;
+  let view = '';
 
   switch (activeComponent) {
     case 'Accordion':
@@ -16,6 +17,9 @@ const Main = ({ activeComponent }) => {
       break;
     case 'ButtonSpinner':
       view = <ButtonSpinnerInfo />;
+      break;
+    case 'ProgressBar':
+      view = <ProgressBarInfo />;
       break;
     case 'Spinner':
       view = <SpinnerInfo />;
