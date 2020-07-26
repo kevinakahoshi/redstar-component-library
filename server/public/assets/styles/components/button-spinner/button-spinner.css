@@ -1,0 +1,45 @@
+.button-spinner {
+  position: relative;
+}
+
+.button-spinner-text {
+}
+
+.visibility--hide {
+  opacity: 0;
+}
+
+.visibility--show {
+  transition: .3s;
+  opacity: 1;
+}
+
+.mini-spinner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-spinner {
+  height: 1rem;
+  width: 1rem;
+  border-width: .125rem;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: #999 #999 #999 transparent;
+  animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

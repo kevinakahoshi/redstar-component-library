@@ -2,6 +2,7 @@ import React from 'react';
 
 // Views
 import AccordionInfo from '../views/AccordionInfo';
+import ButtonSpinnerInfo from '../views/ButtonSpinnerInfo';
 import IntroInfo from '../views/IntroInfo';
 import SpinnerInfo from '../views/SpinnerInfo';
 import TooltipInfo from '../views/TooltipInfo';
@@ -12,6 +13,9 @@ const Main = ({ activeComponent }) => {
   switch (activeComponent) {
     case 'Accordion':
       view = <AccordionInfo />;
+      break;
+    case 'ButtonSpinner':
+      view = <ButtonSpinnerInfo />;
       break;
     case 'Spinner':
       view = <SpinnerInfo />;

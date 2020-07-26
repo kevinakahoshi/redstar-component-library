@@ -1,6 +1,7 @@
 @import url('./font-styles.css');
 
 @import './components/accordion/accordion.css';
+@import './components/button-spinner/button-spinner.css';
 @import './components/header/close-button.css';
 @import './components/header/call-to-action.css';
 @import './components/content-container/content-container.css';
