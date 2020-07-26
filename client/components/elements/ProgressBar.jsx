@@ -3,37 +3,32 @@ import React, {
 } from 'react';
 
 const ProgressBar = () => {
-  const [width, setWidth] = useState(0);
-
-  const increment = () => {
-    if (width < 100) {
-      setWidth(width + 10);
-    }
-  };
-
-  const reset = () => {
-    setWidth(0);
-  };
-
-  const progressBarWidth = {
-    'width': `${width}%`
-  };
+  const [triggered, setTriggered] = useState(false);
 
   return (
     <>
       <div className="progress-outer">
-        <div className="progress-inner" style={progressBarWidth} />
+        <div
+          className="progress-inner"
+          style={{
+            width: triggered ? '100%' : '0%',
+            transition: '2500ms linear'
+          }} />
       </div>
-      <button
-        className="button progress-button"
-        onClick={increment}>
+      <div className="button-wrapper">
+        <button
+          className="button progress-button"
+          onClick={() => setTriggered(true)}
+        >
           Show Me The Progress!
-      </button>
-      <button
-        onClick={reset}
-        className="button progress-button">
+        </button>
+        <button
+          onClick={() => setTriggered(false)}
+          className="button progress-button"
+        >
           Reset
-      </button>
+        </button>
+      </div>
     </>
   );
 };
