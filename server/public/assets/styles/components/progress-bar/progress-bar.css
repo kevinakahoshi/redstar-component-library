@@ -1,11 +1,14 @@
+.progress-wrapper {
+  margin-bottom: 1rem;
+}
+
 .progress-outer {
   width: 100%;
   background: #222222;
 }
 
 .progress-inner {
-  height: .5rem;
-  transition: .3s all;
+  height: .25rem;
   background: #cccccc;
 }
 
