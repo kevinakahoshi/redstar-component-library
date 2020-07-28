@@ -2,17 +2,17 @@ import React, {
   useState
 } from 'react';
 
-const ProgressBar = () => {
+const ProgressBarLinear = ({ duration }) => {
   const [triggered, setTriggered] = useState(false);
 
   return (
-    <>
+    <div className="progress-wrapper">
       <div className="progress-outer">
         <div
           className="progress-inner"
           style={{
             width: triggered ? '100%' : '0%',
-            transition: '2500ms linear'
+            transition: `width ${duration}ms linear`
           }} />
       </div>
       <div className="button-wrapper">
@@ -20,7 +20,7 @@ const ProgressBar = () => {
           className="button progress-button"
           onClick={() => setTriggered(true)}
         >
-          Show Me The Progress!
+          Show Me Linear Progress!
         </button>
         <button
           onClick={() => setTriggered(false)}
@@ -29,8 +29,8 @@ const ProgressBar = () => {
           Reset
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
-export default ProgressBar;
+export default ProgressBarLinear;
