@@ -3,6 +3,8 @@ import React, {
   useState
 } from 'react';
 
+import ProgressBarButtonGroup from './ProgressBarButtonGroup';
+
 const ProgressBarRandom = ({ duration, intervalSpeed }) => {
   const [barWidth, setBarWidth] = useState(0);
   const [start, setStart] = useState(false);
@@ -47,10 +49,8 @@ const ProgressBarRandom = ({ duration, intervalSpeed }) => {
   }, [barWidth, start]);
 
   return (
-    <div
-      className="progress-wrapper">
-      <div
-        className="progress-outer">
+    <div className="progress-wrapper">
+      <div className="progress-outer">
         <div
           className="progress-inner"
           style={{
@@ -59,19 +59,7 @@ const ProgressBarRandom = ({ duration, intervalSpeed }) => {
           }}
         />
       </div>
-      <div
-        className="button-wrapper">
-        <button
-          className="button progress-button"
-          onClick={begin}>
-          Show Me Random Progress!
-        </button>
-        <button
-          onClick={reset}
-          className="button progress-button">
-          Reset
-        </button>
-      </div>
+      <ProgressBarButtonGroup start={begin} reset={reset} />
     </div>
   );
 };

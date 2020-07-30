@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ProgressBarLinear from '../components/elements/ProgressBarLinear';
-import ProgressBarRandom from '../components/elements/ProgressBarRandom';
+import ProgressBarLinear from '../components/elements/ProgressBar/ProgressBarLinear';
+import ProgressBarRandom from '../components/elements/ProgressBar/ProgressBarRandom';
 
 const ProgressBarInfo = () => {
   return (
