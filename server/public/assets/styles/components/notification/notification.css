@@ -1,0 +1,43 @@
+.notification-type-wrappers {
+  position: relative;
+}
+
+.notification {
+  padding: 1rem;
+  border-radius: .25rem;
+  box-shadow: 0rem .5rem 1rem rgba(0, 0 ,0, .15);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 1rem;
+  max-width: fit-content;
+  transition: .3s all;
+  background: #ffffff;
+  margin: 1rem 0rem;
+}
+
+.notification-text-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.notification p {
+  margin: 0;
+}
+
+.close-notification {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: .25rem;
+}
+
+.show {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.hide {
+  transform: translateY(10%);
+  opacity: 0;
+}

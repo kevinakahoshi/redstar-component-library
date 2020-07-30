@@ -8,34 +8,22 @@ const SideScroll = ({ activeComponent, setActiveComponent }) => {
 
   return (
     <div className="side-scroll">
-      <button
-        className="button"
-        value="Accordion"
-        onClick={handleClick}>
+      <button className="button" value="Accordion" onClick={handleClick}>
         Accordion
       </button>
-      <button
-        className="button"
-        value="ButtonSpinner"
-        onClick={handleClick}>
+      <button className="button" value="ButtonSpinner" onClick={handleClick}>
         Button Spinner
       </button>
-      <button
-        className="button"
-        value="ProgressBar"
-        onClick={handleClick}>
+      <button className="button" value="Notification" onClick={handleClick}>
+        Notification
+      </button>
+      <button className="button" value="ProgressBar" onClick={handleClick}>
         Progress Bar
       </button>
-      <button
-        className="button"
-        value="Spinner"
-        onClick={handleClick}>
+      <button className="button" value="Spinner" onClick={handleClick}>
         Spinner
       </button>
-      <button
-        className="button"
-        value="Tooltip"
-        onClick={handleClick}>
+      <button className="button" value="Tooltip" onClick={handleClick}>
         Tooltip
       </button>
     </div>
