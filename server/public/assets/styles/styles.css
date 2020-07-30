@@ -10,6 +10,7 @@
 @import './components/header/logo.css';
 @import './components/header/navigation.css';
 @import './components/header/nav-drawer.css';
+@import './components/notification/notification.css';
 @import './components/progress-bar/progress-bar.css';
 @import './components/spinner/spinner.css';
 @import './components/toolltip/tooltip.css';
@@ -84,18 +85,19 @@ pre {
 
 .side-scroll {
   padding: 1rem;
-  /* border: 1px solid #ccc; */
+  border: 1px solid #ccc;
 }
 
 .main {
   padding: 1rem;
-  /* border: 1px solid #ccc; */
+  border: 1px solid #ccc;
+  position: relative;
 }
 
 .footer {
   padding: 1rem;
   text-align: center;
-  /* border: 1px solid #ccc; */
+  border: 1px solid #ccc;
 }
 
 .button {
