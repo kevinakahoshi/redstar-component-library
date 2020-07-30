@@ -2,8 +2,18 @@ import React, {
   useState
 } from 'react';
 
+import ProgressBarButtonGroup from './ProgressBarButtonGroup';
+
 const ProgressBarLinear = ({ duration }) => {
   const [triggered, setTriggered] = useState(false);
+
+  const start = () => {
+    setTriggered(true);
+  };
+
+  const reset = () => {
+    setTriggered(false);
+  };
 
   return (
     <div className="progress-wrapper">
@@ -15,20 +25,9 @@ const ProgressBarLinear = ({ duration }) => {
             transition: `width ${duration}ms linear`
           }} />
       </div>
-      <div className="button-wrapper">
-        <button
-          className="button progress-button"
-          onClick={() => setTriggered(true)}
-        >
-          Show Me Linear Progress!
-        </button>
-        <button
-          onClick={() => setTriggered(false)}
-          className="button progress-button"
-        >
-          Reset
-        </button>
-      </div>
+      <ProgressBarButtonGroup
+        start={start}
+        reset={reset} />
     </div>
   );
 };

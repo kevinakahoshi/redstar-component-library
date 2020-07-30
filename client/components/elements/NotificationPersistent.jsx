@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Notification = ({ maxLength, notificationText, setShow, show }) => {
+const NotificationPersistent = ({ maxLength, notificationText, setShow, show }) => {
   if (notificationText.length > maxLength && maxLength > 0 && typeof maxLength === 'number') {
     notificationText = notificationText.slice(0, maxLength - 1);
   }
@@ -26,4 +26,4 @@ const Notification = ({ maxLength, notificationText, setShow, show }) => {
   );
 };
 
-export default Notification;
+export default NotificationPersistent;
