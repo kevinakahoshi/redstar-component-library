@@ -13,6 +13,8 @@
   transition: .3s all;
   background: #ffffff;
   margin: 1rem 0rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .notification-text-wrapper {
@@ -41,4 +43,17 @@
 .hide {
   transform: translateY(10%);
   opacity: 0;
+}
+
+.timer-wrapper {
+  background: #cccccc;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.timer-inner {
+  height: .25rem;
+  background: #333333;
 }

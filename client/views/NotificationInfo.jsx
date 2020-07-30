@@ -33,6 +33,7 @@ const NotificationInfo = () => {
           { showTimed ? 'Show' : 'Hide' } Timed Notification
         </button>
         <NotificationTimed
+          duration={3000}
           maxLength={40}
           notificationText="This is a new timed notification!"
           setShowTimed={setShowTimed}
