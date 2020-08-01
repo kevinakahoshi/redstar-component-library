@@ -57,3 +57,17 @@
   height: .25rem;
   background: #333333;
 }
+
+.grow {
+  animation-name: grow;
+}
+
+@keyframes grow {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

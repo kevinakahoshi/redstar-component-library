@@ -26,7 +26,7 @@ const NotificationTimed = ({
   }
 
   return (
-    <div className={`notification ${show ? 'hide' : 'show'}`}>
+    <div className={`notification show`}>
       <div className="notification-text-wrapper">
         <p>{notificationText}</p>
       </div>
@@ -40,10 +40,9 @@ const NotificationTimed = ({
       </div>
       <div className="timer-wrapper">
         <div
-          className="timer-inner"
+          className="timer-inner grow"
           style={{
-            width: `${show ? 0 : 100}%`,
-            transition: `${duration}ms width linear`
+            animationDuration: `${duration}ms`
           }}
         />
       </div>
